@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+      tinymce.init({
+        selector: '#mytextarea',
+        resize:'both',
+
+        icons:'material'
+      });
+    </script>
+</head>
+</head>
+<body>
+    <nav class="nav-bar">
+        <ul class="nav-bar-items">
+            <div class="nav-bar-toggle">
+                <a href="#"><i class="fa fa-bars"></i></a>
+            </div>
+            
+                <div><li class="nav-item"><a href="#">Take a note</a></li></div>
+                <div></div><li class="nav-item"><a href="#">Other Apps</a></li></div>
+                <div></div><li class="nav-item"><a href="#">Profile</a></li></div>
+            
+
+        </ul>
+        
+    </nav>
+   
+            <div class="controls">
+                <ul class="controls-items">
+                    <div class="controls-toggle">
+                        <a href="#"><i class="fa fa-bars"></i>   </a>
+                    </div>
+                    
+                        <div><li class="control-item"><a  
+                            href="#"><button class="btn" onclick="addNote()"><i class="fa fa-plus icons"></i>&nbsp;&nbsp;Add note</button></a></li>
+                        </div>
+                        
+                        <div><li class="control-item"><a
+                             href="#"><button  class="btn" onclick="deleteNote()"><i class="fa fa-trash icons"></i>&nbsp;&nbsp;Clear note</button></a></li></div>
+                        <div><li class="control-item"><a 
+                            href="#"><button  class="btn" onclick="merge()"><i class="fa fa-link icons"></i>&nbsp;&nbsp;Merge with</button></a></li></div>
+                        <div><li class="control-item"><a 
+                            href="#"><button  class="btn" onclick="draft()"><i class="fa fa-file icons"></i>&nbsp;&nbsp; Save as Draft</button></a></li></div>
+
+                        <div><li class="control-item"><a
+                             href="#"><button  class="btn" onclick="saveLocal()"><i class="fa fa-save icons"></i>&nbsp;&nbsp; Save To Device</button></a></li>
+                            </div>
+
+                    
+                </ul>
+            </div>
+            <div class="text-tool">
+                <form class="form"id="get-data-form" method="post">
+                    <div><textarea placeholder="Type a note here!!" name="textarea" id="mytextarea"></textarea></div></br>
+                    <input class="btn" type="submit" value="save">
+
+                </form>
+                <div class="dashboard">
+                    <div class="current-activty">
+                        <div class="current-section">
+                            <p id="data-container">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio officia reiciendis inventore nisi expedita magni repellat doloribus, quae architecto asperiores. Architecto cupiditate fuga distinctio quos excepturi placeat veritatis ipsa dolorem!</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio officia reiciendis inventore nisi expedita magni repellat doloribus, quae architecto asperiores. Architecto cupiditate fuga distinctio quos excepturi placeat veritatis ipsa dolorem!</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio officia reiciendis inventore nisi expedita magni repellat doloribus, quae architecto asperiores. Architecto cupiditate fuga distinctio quos excepturi placeat veritatis ipsa dolorem!</p>
+                        </div>
+                    </div>
+                 </hr>
+                    <div class="recent-notes">
+                        <div class="recent-section">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repudiandae exercitationem est eos aliquam ipsa incidunt sed! Sint suscipit laboriosam quod harum iure commodi fugit consequatur, qui nemo quo sunt.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio officia reiciendis inventore nisi expedita magni repellat doloribus, quae architecto asperiores. Architecto cupiditate fuga distinctio quos excepturi placeat veritatis ipsa dolorem!</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio officia reiciendis inventore nisi expedita magni repellat doloribus, quae architecto asperiores. Architecto cupiditate fuga distinctio quos excepturi placeat veritatis ipsa dolorem!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                    
+
+        
+
+        .
+    
+</body>
+<script src="js/script.js"></script>
+<script src="js/jQuery.js"></script>
+<script src="js/getdata.js"></script>
+
+
+</html>
